@@ -1,0 +1,26 @@
+<!--pages/Saying/Saying.wxml-->
+<view class='container'>
+  <view class='swiper'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' circular='true' interval='{{interval}}'>
+      <block wx:for='{{ImgUrls}}'>
+        <swiper-item>
+          <image src='{{item}}' class='swiper-img' data-Imgid='{{index}}' bindtap='bindClickImg'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='head'>
+    <!-- <text class='title'>经典语录集锦</text> -->
+    <text class='sub-title' bindtap='bindChange'>换一批</text>
+    <!-- <image class='head-img' src='/images/refresh.png' bindtap='bindChange' /> -->
+    <image class='head-img' src='/images/translate.png' bindtap='bindChangeLanguage' />
+  </view>
+  <view class='content'>
+    <block wx:for="{{sourceData}}">
+      <view class='Saying-detail'>
+        <text class='detail-english' wx:if='{{showEnglish}}'>{{index+1}}、{{item.EnglishVersion}}</text>
+        <text class='detail-chinese' wx:if='{{showChinese}}'>{{index+1}}、{{item.ChineseVersion}}</text>
+      </view>
+    </block>
+  </view>
+</view>

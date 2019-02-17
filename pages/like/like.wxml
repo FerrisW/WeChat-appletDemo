@@ -1,0 +1,9 @@
+<view>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' circular='true' interval='{{interval}}'>
+    <block wx:for='{{ImgUrls}}'>
+      <swiper-item>
+        <image src='{{item}}' class='swiper-img' data-Imgid='{{index}}' bindtap='bindClickImg'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/like/like",
+    "pages/joke/joke",
+    "pages/Saying/Saying"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath": "pages/Saying/Saying",
+        "text": "经典语录",
+        "iconPath": "images/yuedu.png",
+        "selectedIconPath": "images/yuedu_hl.png"
+      },
+      {
+        "pagePath":"pages/like/like",
+        "text":"热门音乐榜单",
+        "iconPath":"images/dianying.png",
+        "selectedIconPath":"images/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/joke/joke",
+        "text": "笑话",
+        "iconPath": "images/ciwei.png",
+        "selectedIconPath": "images/ciwei_hl.png"
+      }
+    ]
+  }
+}
